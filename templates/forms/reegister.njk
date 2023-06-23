@@ -13,22 +13,22 @@
                     <div class="input-box">
                         <span class="icon"></span>
                         <input type="text" required>
-                        <label for="Username">Username</label>
+                        <label for="Username" id="username">Username</label>
                     </div>
                     <div class="input-box">
                         <span class="icon"></span>
                         <input type="text" required>
-                        <label for="Username">Email</label>
+                        <label for="Username" id="email">Email</label>
                     </div>
                     <div class="input-box">
                         <span class="icon"></span>
                         <input type="text" required>
-                        <label for="Password">Password</label>
+                        <label for="Password" id="password">Password</label>
                     </div>
                     <div class="input-box">
                         <span class="icon"></span>
                         <input type="text" required>
-                        <label for="Password">Confirm Password</label>
+                        <label for="Password" id="confirm-password">Confirm Password</label>
                     </div>
                     <div class="remember-me">
                         <label><input type="checkbox">Remember Me</label>
@@ -123,7 +123,7 @@
 		.input-box label {
 			position: absolute;
 			top: 30%;
-			left: 40px;
+			{# left: 40px; #}
 			transform: translateX(-50%);
 			font-size: 1em;
 			color: var(--off-white);
@@ -133,6 +133,18 @@
 			font-size: 1em;
 			font-color: var(--off-white);
 			font-weight: 600;
+		}
+		#username {
+			left: 40px;
+		}
+		#email {
+			left: 24px;
+		}
+		#password {
+			left: 40px;
+		}
+		#confirm-password {
+			left: 71px;
 		}
 		.input-box input:focus~label,
 		.input-box input:valid~label{
