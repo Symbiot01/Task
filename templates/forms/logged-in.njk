@@ -1,0 +1,129 @@
+{% extends "_base.njk" %}
+
+{% set thispage = 'login' %}
+{% set pagetitle = 'Login' %}
+{% set pagedesc = 'Login to Manga & Anime Society Kharagpur [MASK]! site' %}
+
+{% block pagecontent %}
+    <div class="container">
+        <div class="wrapper">
+            <div class="login-form-box">
+                <h2>You have successfully logged in.</h2>
+				<div class="dashboard">
+					<p><a href="#" class="dash">View Dashboard</a></p>
+				</div>
+				 <h4>OR</h4>
+				<div class="register">
+					<p><a href="#" class="register">Log out</a></p>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block customcss %}
+	<style>
+		:root {
+			--abyss       : #060606;
+			--shadow-gray : #1f1f1f;
+			--darker-gray : #252525;
+			--dark-gray   : #373737;
+			--tinted-gray : #444444;
+			--medium-gray : #555555;
+			--middle-gray : #606060;
+			--gray        : #6d6d6d;
+			--ghost-gray  : #777777;
+			--light-gray  : #a9a9a9;
+			--off-white   : #d0d0d0;
+			--white       : #ffffff;
+
+			--dark-red    : #8b0000;
+			--red         : #d61f35;
+			--error-red   : #e84e4f;
+			--light-pink  : #f1adad;
+		}
+		.container{
+			width:inherit;
+			height: inherit;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.wrapper {
+			position: relative;
+			width: 600px;
+			height: 300px;
+			background: transparent;
+			border: 3px solid;
+			border-color: var(--dark-gray);
+			border-top-color:var(--red);
+			border-bottom-color: var(--red);
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			backdrop-filter: blur(10px);
+			box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.login-form-box {
+			width:100%;
+			padding: 40px;
+			box-sizing: border-box;
+		}
+		.login-form-box h2 {
+			font-size: 1.2em;
+			color: #d0d0d0;
+			text-align: center;
+			margin: 20px;
+		}
+		.dashboard {
+			width: 100%;
+			height: 45px;
+			background: var(--red);
+			border: none;
+			outline: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 1em;
+			color: var(--white);
+			font-style: 500;
+			align-items: center;
+			box-sizing: border-box;
+			padding: 15px;
+		}
+		.dashboard p a {
+			color: var(--white);
+			text-decoration:none;
+			font-weight: 600;
+			padding-top: 12px;
+		}
+		.dashboard p a:hover {
+			text-decoration: underline;
+		}
+		.register {
+			font-size: 0.9em;
+			color: var(--off-white);
+			text-align: center;
+			font-weight: 500;
+			margin: 25px 0 10px;
+		}
+		.register p a {
+			color: var(--white);
+			text-decoration:none;
+			font-weight: 600;
+		}
+		.register p a:hover {
+			text-decoration: underline;
+		}
+		.login-form-box h4 {
+			margin: 15px;
+		}
+	</style>
+{% endblock %}
+
+{% block customjs %}
+
+{% endblock %}
